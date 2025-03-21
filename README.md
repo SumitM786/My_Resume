@@ -1,0 +1,581 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMEET MEHTA - BBA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #101b24;
+            --secondary-color: #133549;
+        }
+
+        body {
+            background-color: #f8fafc;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+        }
+
+        .section-card {
+            background: white;
+            border-radius: 15px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-badge {
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .skill-badge:hover {
+            background: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .timeline-item {
+            border-left: 3px solid var(--secondary-color);
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: var(--secondary-color);
+            position: absolute;
+            left: -9px;
+            top: 0;
+            border-radius: 50%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fadein {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="container text-center py-5 animate-fadein">
+        <img src="path/to/SUMIT.jpg" class="profile-img rounded-circle mb-3">
+        <h1 class="display-4 fw-bold mb-3">SUMEET MEHTA</h1>
+        <div class="d-flex justify-content-center gap-3 mb-3">
+            <a href="tel:8859433381" class="btn btn-outline-primary">
+                <i class="fas fa-phone"></i> 8859433381
+            </a>
+            <a href="mailto:sumitmehta30nov@gmail.com" class="btn btn-outline-primary">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="#" class="btn btn-outline-primary">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Summary -->
+        <section class="section-card p-4 mb-4 animate-fadein">
+            <h2 class="h4 text-primary mb-3">PROFESSIONAL SUMMARY</h2>
+            <p class="mb-0">Motivated and results-oriented BBA student with a solid foundation in business principles, seeking to leverage 
+                academic knowledge and hands-on experience in corporate environments. Proven ability to effectively collaborate 
+                within teams, analyse data, and develop strategic solutions. Strong communication skills and a proactive approach 
+                to problem-solving. Eager to contribute to the success and growth of a dynamic corporate organization.</p>
+        </section>
+
+        <!-- Education -->
+        <section class="section-card p-4 mb-4 animate-fadein">
+            <h2 class="h4 text-primary mb-4">EDUCATION</h2>
+            <div class="timeline-item">
+                <h3>Amrapali Group of Institute, Haldwani</h3>
+                <p class="text-muted">Bachelor of Business Administration</p>
+                <p class="text-secondary">2022-Present</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Kendriya Vidyalaya, Haldwani</h3>
+                <p class="text-muted">Intermediate</p>
+                <p class="text-secondary">2022</p>
+            </div>
+        </section>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CERTIFICATION</title>
+          <style>
+            /* General Styles */
+            body {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              background-color: #f4f4f9;
+              color: #333;
+              margin: 0;
+              padding: 0;
+            }
+        
+            .section-title {
+              text-align: center;
+              font-size: 2.5rem;
+              color: #2A2A72;
+              margin-bottom: 2rem;
+            }
+        
+            /* Certification Grid */
+            .certification-grid {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 2rem;
+              padding: 0 2rem;
+            }
+        
+            /* Certification Card */
+            .certification-card {
+              background: #fff;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              width: 300px;
+              padding: 1.5rem;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            .certification-card:hover {
+              transform: translateY(-10px);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+        
+            .certification-image {
+              width: 102%;
+              height: 170px;
+              object-fit: cover;
+              border-radius: 10px;
+              margin-bottom: 1rem;
+            }
+        
+            .certification-icon img {
+              width: 48px;
+              height: 48px;
+              margin-bottom: 1rem;
+            }
+        
+            .certification-details h3 {
+              font-size: 1.25rem;
+              color: #2c3e50;
+              margin-bottom: 0.5rem;
+            }
+        
+            .certification-details .date {
+              font-size: 0.9rem;
+              color: #7f8c8d;
+              margin-bottom: 0.75rem;
+            }
+        
+            .certification-details .description {
+              font-size: 0.9rem;
+              color: #555555;
+              line-height: 1.5;
+            }
+        
+            /* Responsive Design */
+            @media (max-width: 768px) {
+              .certification-grid {
+                flex-direction: column;
+                align-items: center;
+              }
+        
+              .certification-card {
+                width: 100%;
+                max-width: 400px;
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <section class="certifications">
+            <h2 class="section-title">CERTIFICATION</h2>
+            <div class="certification-grid">
+              <!-- Infosys Certification -->
+              <div class="certification-card">
+                <img src="path/to/infosys (1).jpg" alt="Infosys Certification" class="certification-image">
+                <div class="certification-icon">
+                  <img src="https://img.icons8.com/color/48/certificate.png" alt="Certificate Icon">
+                </div>
+                <div class="certification-details">
+                  <h3>Infosys - Young Industry Enthusiast – Capital Markets</h3>
+                  <p class="date">2024</p>
+                  <p class="description">Awarded for demonstrating exceptional enthusiasm and knowledge in the capital markets domain.</p>
+                </div>
+              </div>
+        
+              <!-- Power BI Certification -->
+              <div class="certification-card">
+                <img src="path/to/IMAGE.JPG (2).jpg" alt="Power BI Certification" class="certification-image">
+                <div class="certification-icon">
+                  <img src="https://img.icons8.com/color/48/data-configuration.png" alt="Data Icon">
+                </div>
+                <div class="certification-details">
+                  <h3>Data Visualization with Power BI</h3>
+                  <p class="date">2024</p>
+                  <p class="description">Completed a comprehensive course on data visualization using Power BI by Great Learning.</p>
+                </div>
+              </div>
+        
+              <!-- Excel Certification -->
+              <div class="certification-card">
+                <img src="path/to/SUMEET MEHTA.jpg" alt="Excel Certification" class="certification-image">
+                <div class="certification-icon">
+                  <img src="https://img.icons8.com/color/48/ms-excel.png" alt="Excel Icon">
+                </div>
+                <div class="certification-details">
+                  <h3>Introduction to Data Analysis using Microsoft Excel</h3>
+                  <p class="date">2024</p>
+                  <p class="description">Learned the fundamentals of data analysis using Microsoft Excel through Coursera Project Network.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </body>
+        </html>
+                    
+        
+        </section>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Interactive Achievement Portfolio</title>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <style>
+                :root {
+                    --primary: #2A2A72;
+                    --secondary: #009FFD;
+                    --bg: #202428;
+                }
+        
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Poppins', sans-serif;
+                }
+        
+                body {
+                    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+                    min-height: 100vh;
+                }
+        
+                .container {
+                    max-width: 1400px;
+                    margin: 0 auto;
+                    padding: 2rem;
+                }
+        
+                .header {
+                    text-align: center;
+                    margin-bottom: 3rem;
+                }
+        
+                .header h1 {
+                    font-size: 2.5rem;
+                    color: var(--primary);
+                    margin-bottom: 1rem;
+                    position: relative;
+                    display: inline-block;
+                }
+        
+                .header h1::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 60%;
+                    height: 3px;
+                    background: linear-gradient(90deg, var(--primary), var(--secondary));
+                }
+        
+                .achievements-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    padding: 1rem;
+                }
+        
+                .achievement-card {
+                    background: rgba(255, 255, 255, 0.9);
+                    border-radius: 15px;
+                    padding: 2rem;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    border-top: 5px solid var(--primary);
+                    position: relative;
+                    overflow: hidden;
+                }
+        
+                .achievement-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+                }
+        
+                .achievement-card::before {
+                    content: '';
+                    position: absolute;
+                    top: -50%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: linear-gradient(45deg, transparent, var(--secondary), transparent);
+                    transform: rotate(45deg);
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+        
+                .achievement-card:hover::before {
+                    opacity: 0.1;
+                    animation: shine 1.5s;
+                }
+        
+                @keyframes shine {
+                    0% { left: -50%; }
+                    100% { left: 150%; }
+                }
+        
+                .card-icon {
+                    font-size: 2.5rem;
+                    color: var(--secondary);
+                    margin-bottom: 1rem;
+                }
+        
+                .card-title {
+                    font-size: 1.4rem;
+                    color: var(--primary);
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                }
+        
+                .card-desc {
+                    color: #6c757d;
+                    line-height: 1.6;
+                    font-size: 0.95rem;
+                }
+        
+                .ribbon {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    background: var(--accent);
+                    color: white;
+                    padding: 0.5rem 1.5rem;
+                    transform: rotate(45deg);
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                }
+        
+                .navigation {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-bottom: 3rem;
+                    flex-wrap: wrap;
+                }
+        
+                .nav-btn {
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 30px;
+                    background: white;
+                    border: 2px solid var(--primary);
+                    color: var(--primary);
+                    transition: all 0.3s ease;
+                    font-weight: 500;
+                }
+        
+                .nav-btn:hover {
+                    background: var(--primary);
+                    color: white;
+                    transform: translateY(-3px);
+                }
+        
+                @media (max-width: 768px) {
+                    .achievements-grid {
+                        grid-template-columns: 1fr;
+                    }
+                    
+                    .header h1 {
+                        font-size: 2rem;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>Leadership & Achievements</h1>
+                    <div class="navigation">
+                        <button class="nav-btn" onclick="filterCards('all')">All</button>
+                        <button class="nav-btn" onclick="filterCards('leadership')">Leadership</button>
+                        <button class="nav-btn" onclick="filterCards('creative')">Creative</button>
+                        <button class="nav-btn" onclick="filterCards('sports')">Sports</button>
+                    </div>
+                </div>
+        
+                <div class="achievements-grid">
+                    <!-- HR Skit -->
+                    <div class="achievement-card" data-category="leadership creative">
+                        <div class="ribbon">1st Place</div>
+                        <i class="fas fa-users card-icon"></i>
+                        <h3 class="card-title">HR Skit Leader</h3>
+                        <p class="card-desc">
+                            Championed an award-winning corporate skit simulating exit interviews, outperforming 25+ teams through innovative storytelling and leadership.
+                        </p>
+                    </div>
+        
+                    <!-- Social Awareness -->
+                    <div class="achievement-card" data-category="creative">
+                        <div class="ribbon">2nd Place</div>
+                        <i class="fas fa-theater-masks card-icon"></i>
+                        <h3 class="card-title">Gender Equality Performer</h3>
+                        <p class="card-desc">
+                            Conceptualized and staged impactful street plays addressing gender disparities, engaging 500+ community members through powerful performances.
+                        </p>
+                    </div>
+        
+                    <!-- Event Coordination -->
+                    <div class="achievement-card" data-category="leadership">
+                        <i class="fas fa-hashtag card-icon"></i>
+                        <h3 class="card-title">Social Media Strategist</h3>
+                        <p class="card-desc">
+                            Directed digital campaigns and coordinated 15+ college events, boosting online engagement by 40% through creative content strategies.
+                        </p>
+                    </div>
+        
+                    <!-- Cricket -->
+                    <div class="achievement-card" data-category="sports leadership">
+                        <div class="ribbon">Finalist</div>
+                        <i class="fas fa-cricket card-icon"></i>
+                        <h3 class="card-title">Cricket Team Captain</h3>
+                        <p class="card-desc">
+                            Led regional cricket team to finals with strategic leadership, managing 15 players while maintaining academic excellence.
+                        </p>
+                    </div>
+        
+                    <!-- NCC -->
+                    <div class="achievement-card" data-category="leadership">
+                        <i class="fas fa-medal card-icon"></i>
+                        <h3 class="card-title">NCC "A" Certified Leader</h3>
+                        <p class="card-desc">
+                            Earned prestigious NCC certification through exceptional discipline and leadership in national service initiatives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                // Filtering functionality
+                function filterCards(category) {
+                    const cards = document.querySelectorAll('.achievement-card');
+                    cards.forEach(card => {
+                        if (category === 'all' || card.dataset.category.includes(category)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+        
+                // Scroll animation
+                const = newIntersectionObserver ((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.opacity = 1;
+                            entry.target.style.transform = 'translateY(0)';
+                        }
+                    });
+                });
+        
+                document.querySelectorAll('.achievement-card').forEach((card) => {
+                    card.style.opacity = 0;
+                    card.style.transform = 'translateY(50px)';
+                    card.style.transition = 'all 0.6s ease';
+                    observer.observe(card);
+                });
+            </script>
+        </body>
+        </html>
+   <!-- Skills -->
+        <section class="section-card p-4 mb-4 animate-fadein">
+            <h2 class="h4 text-primary mb-3">SKILLS</h2>
+            <h5>Technical skills</h5>
+            <div class="mb-4">
+                <span class="skill-badge">Microsoft Office suit</span>
+                <span class="skill-badge">Power BI</span>
+                <span class="skill-badge">Runway ML</span>
+                <span class="skill-badge"></span>
+                <span class="skill-badge">Blackbox AI</span>
+                <span class="skill-badge">Data analysis</span>
+                <span class="skill-badge">canva</span>
+
+    
+            </div>
+            <h5>Soft skills</h5>
+            <div>
+                <span class="skill-badge">Communication</span>
+                <span class="skill-badge">Time management</span>
+                <span class="skill-badge">Quick larner</span>
+                <span class="skill-badge">Team player</span>
+                <span class="skill-badge">Adaptabality</span>
+                <span class="skill-badge">critical thinking</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadein');
+                }
+            });
+        });
+
+        document.querySelectorAll('.section-card').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+<a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUuNGsTSwTC%2BovtgcMc4B4Q%3D%3D" class="btn btn-outline-primary" target="_blank">
+    <i class="fab fa-linkedin"></i> LinkedIn
+</a>
